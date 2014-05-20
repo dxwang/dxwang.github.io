@@ -32,10 +32,18 @@ h3, h4, h5, h6 {
   color:#494949;
 }
 
+i {
+  padding-top: 4px;
+}
+
 a {
   color:#39c;
   font-weight:400;
   text-decoration:none;
+}
+
+a strong {
+  color: #39c;
 }
 
 a:hover {
@@ -51,6 +59,30 @@ a small {
 
 a:hover small {
   color:#777;
+}
+
+.highlight {
+  color:#f60;
+}
+
+.normal {
+  color:#000;
+}
+
+.avatar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
 }
 
 .wrapper {
@@ -109,7 +141,7 @@ header {
   position:fixed;
 }
 
-header ul {
+ul.navbar {
   list-style:none;
   height:40px;
   
@@ -129,22 +161,22 @@ header ul {
   width:270px;
 }
 
-header li {
+ul.navbar li {
   width:89px;
   float:left;
   border-right:1px solid #d2d2d2;
   height:40px;
 }
 
-header li:first-child a {
+ul.navbar li:first-child a {
   border-radius:5px 0 0 5px;
 }
 
-header li:last-child a {
+ul.navbar li:last-child a {
   border-radius:0 5px 5px 0;
 }
 
-header ul a {
+ul.navbar a {
   line-height:1;
   font-size:11px;
   color:#999;
@@ -154,8 +186,8 @@ header ul a {
   height:34px;
 }
 
-header ul a:hover {
-  color:#999;
+ul.navbar a:hover {
+  color:#39c;
   background: -moz-linear-gradient(top, #fff 0%, #ddd 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#ddd));
   background: -webkit-linear-gradient(top, #fff 0%,#ddd 100%);
@@ -164,7 +196,7 @@ header ul a:hover {
   background: linear-gradient(top, #fff 0%,#ddd 100%);
 }
 
-header ul a:active {
+ul.navbar a:active {
   -webkit-box-shadow: inset 0px 2px 2px 0px #ddd;
   -moz-box-shadow: inset 0px 2px 2px 0px #ddd;
   box-shadow: inset 0px 2px 2px 0px #ddd;
@@ -175,17 +207,17 @@ strong {
   font-weight:700;
 }
 
-header ul li + li {
+ul.navbar li + li {
   width:88px;
   border-left:1px solid #fff;
 }
 
-header ul li + li + li {
+ul.navbar li + li + li {
   border-right:none;
   width:89px;
 }
 
-header ul a strong {
+ul.navbar a strong {
   font-size:14px;
   display:block;
   color:#222;
@@ -271,10 +303,6 @@ footer {
 @media print, screen and (max-width: 480px) {
   body {
     padding:15px;
-  }
-  
-  header ul {
-    display:none;
   }
 }
 
