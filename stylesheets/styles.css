@@ -69,6 +69,10 @@ a:hover small {
   color:#000;
 }
 
+.light {
+  color:#999;
+}
+
 .avatar {
     margin-left: auto;
     margin-right: auto;
