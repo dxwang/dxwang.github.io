@@ -24,7 +24,7 @@
           <li><a href="mailto:x284wang@uwaterloo.ca"><i class="fa fa-envelope-o fa-2x"></i></a></li>
         </ul>
         <p class="view">2015 Bachelor of Computer Science </br><small>University of Waterloo</small><br>2015 Bachelor of Business Administration <br><small>Wilfrid Laurier University</small></p>
-        <p class="view">Web. OOP.<br><span class="js">JavaScript.</span> <span class="py">Python.</span> <span class="db">Databases.</span></p>
+        <p class="view">Web. OOP.<br><strong class="light"><span class="js">JavaScript.</span> <span class="py">Python.</span> <span class="db">Databases.</span></strong></p>
         <h2>
           <a href="#wrk"><strong>Work.</strong></a>
           <a href="#ply"><strong class="highlight">Play.</strong></a>
@@ -52,6 +52,17 @@
       </section>
       <section id="play">
         <h1>Projects</h1>
+        <h2>iWant</h2>
+        <p><a href="http://dxwang.github.io/iwant/www">A hybrid mobile app that makes food decisions for you.</a><br><strong class="light"><span class="js">#IonicFramework #AngularJS</span></strong></p>
+        <p><em>Made by a team of 3 for LA Hacks 2013 within 36 hours.</em></p>
+        <hr/>
+        <h2>Glimpse</h2>
+        <p><a href="http://www.glimpseglimpse.com">A lifestyle and neighbourhood centric way of searching for real estate.</a><br><strong class="light"><span class="js">#NodeJS #BackboneJS</span> <span class="db">#MongoDB</span></strong></p>
+        <p><em>Made significant engineering decisions for a 6 person <a href="http://www.thenext36.ca">Next 36</a> start up.</em></p>
+        <hr/>
+        <h2>tl;dr</h2>
+        <p><a href="http://www.readtldr.com">A news app that merges and summarizes news from multiple sources.</a><br><strong class="light"><span class="js">#JavaScript</span></strong></p>
+        <p><em>Made by a team of 2 for <a href="http://velocity.uwaterloo.ca/">Velocity</a> Demo Day 2013.</em></p>
       </section>
       <section id="blog">
         <h1>Blog</h1>
@@ -117,18 +128,24 @@
       $('.js').hover(
         function(){
           $('.js').css({"color":"#39c"});
+          $('header .js').css({"color":"#000"});
+          $('#play .js').css({"color":"#f60"});
         },function(){
           $('.js').css({"color":"#999"});
       });
       $('.py').hover(
         function(){
           $('.py').css({"color":"#39c"});
+          $('header .py').css({"color":"#000"});
+          $('#play .py').css({"color":"#f60"});
         },function(){
           $('.py').css({"color":"#999"});
       });
       $('.db').hover(
         function(){
           $('.db').css({"color":"#39c"});
+          $('header .db').css({"color":"#000"});
+          $('#play .db').css({"color":"#f60"});
         },function(){
           $('.db').css({"color":"#999"});
       });

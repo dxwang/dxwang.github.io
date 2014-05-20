@@ -42,12 +42,26 @@ a {
   text-decoration:none;
 }
 
+#play a {
+  color:#f60;
+  font-weight:400;
+  text-decoration:none;
+}
+
 a strong {
   color: #39c;
 }
 
+#play a strong{
+  color: #f60;
+}
+
 a:hover {
   color:#069;
+}
+
+#play a:hover {
+  color:#f30;
 }
 
 a small {
